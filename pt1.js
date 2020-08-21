@@ -4,11 +4,11 @@ function removeQuadruples(input) {
     let count = 0
     let prev = ''
     let result = ''
-    for (c in input) {
-        if (input[c] === prev) count += 1
+    for (char of input) {
+        if (char === prev) count += 1
         else count = 0
-        if (count !== 3) result = result+input[c]
-        prev = input[c]
+        if (count !== 3) result = result+char
+        prev = char
     }
     return result
 }
