@@ -9,7 +9,7 @@ export const validateNumber = (number) => {
     let error = null
     let isNumbersOnly = /^\d+$/.test(number);
     if (!isNumbersOnly) error = 'Card number must only contain numbers'
-    if (number.length !== 16) 'Card number is not long enough'
+    if (number.length !== 16) error = 'Card number is not long enough'
     return error
 }
 
@@ -27,6 +27,6 @@ export const validateCvc = cvc => {
     let error = null
     let isNumbersOnly = /^\d+$/.test(cvc);
     if (!isNumbersOnly) error = 'CVC must only contain numbers'
-    if (cvc.length < 3 || cvc.length > 4) 'CVC must be 3 or 4 digits'
+    else if (cvc.length < 3 || cvc.length > 4) error = 'CVC must be 3 or 4 digits'
     return error
 }
