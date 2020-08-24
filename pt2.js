@@ -1,4 +1,4 @@
-const input = [61, 32, 51]
+const input = [19, 2, 42, 18]
 
 function findMax(arr) {
     let max = arr[0]
