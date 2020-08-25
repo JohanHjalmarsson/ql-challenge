@@ -1,6 +1,6 @@
 export const validateName = (name) => {
     let error = null
-    let isLettersOnly = /^[A-Za-z]+$/.test(name)
+    let isLettersOnly = /^[a-zA-Z\s]*$/.test(name)
     if (!isLettersOnly) error = 'Card holder name must only containt letters'
     return error
 }
