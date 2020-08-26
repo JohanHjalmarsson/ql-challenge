@@ -59,7 +59,7 @@ const Container = () => {
     }
 
     return (
-        <div>
+        <div style={{width: '100vw'}}>
             <Cards 
                 cvc={cardInformation.cvc}
                 expiry={cardInformation.month+cardInformation.year}

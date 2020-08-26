@@ -8,31 +8,48 @@
     height: 35px;
     padding: 10px;
     border-radius: 5px;
-    
+    max-width: 400px;
     border: 1px solid grey;
 }
 
 .wide_input {
-    width: 400px;
+    width: 100%;
+    /* width: 400px; */
 }
 
 .form_bottom {
-    width: 400px;
+    width: 90vw;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .select {
     width: 100px;
+    
 }
 
 .form_button {
-    width: 400px;
+    width: 90vw;
+    max-width: 400px;
     height: 50px;
 }
 
 .form_container {
+    margin: auto;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    width: 100vw;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 405px) {
+    .input {
+        width: 90vw;
+    }
+    .select {
+        width: 40vw;
+    }
 }
